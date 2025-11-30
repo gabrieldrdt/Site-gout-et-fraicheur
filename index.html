@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goût et Fraîcheur - Producteurs Locaux depuis 2012</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Goût et Fraîcheur</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Nos Produits</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Le Vrai Goût à Votre Portée</h1>
+            <p>Produits locaux et fraîcheur garantie depuis 2012</p>
+            <a href="#produits" class="cta-button">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <div class="number">13</div>
+            <div class="label">Ans d'expérience</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">100%</div>
+            <div class="label">Producteurs locaux</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">🌱</div>
+            <div class="label">Fraîcheur quotidienne</div>
+        </div>
+    </section>
+
+    <section class="products" id="produits">
+        <h2 class="section-title">Nos Produits</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">🍅</div>
+                <div class="product-info">
+                    <h3>Fruits & Légumes</h3>
+                    <p>Sélection quotidienne de fruits et légumes frais provenant de producteurs locaux de confiance.</p>
+                    <span class="product-tag">Ultra Frais</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍯</div>
+                <div class="product-info">
+                    <h3>Miel Artisanal</h3>
+                    <p>Notre dernière trouvaille : du miel artisanal 100% naturel, sans conservateur et extra frais.</p>
+                    <span class="product-tag">Nouveauté</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🐟</div>
+                <div class="product-info">
+                    <h3>Saumon Fumé</h3>
+                    <p>Saumon fumé de Thierry Sallas, un produit d'exception pour les palais exigeants.</p>
+                    <span class="product-tag">Premium</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🥓</div>
+                <div class="product-info">
+                    <h3>Charcuterie Bigorre</h3>
+                    <p>Charcuterie de porc noir de Bigorre fumée, une saveur unique et gourmande.</p>
+                    <span class="product-tag">Exclusif</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🧀</div>
+                <div class="product-info">
+                    <h3>Fromages Locaux</h3>
+                    <p>Sélection de fromages de la région, affinés avec soin par nos producteurs partenaires.</p>
+                    <span class="product-tag">Terroir</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🍽️</div>
+                <div class="product-info">
+                    <h3>Plateaux Traiteur</h3>
+                    <p>Plateaux variés pour vos événements privés ou publics, préparés sur mesure.</p>
+                    <span class="product-tag">Sur commande</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news" id="actualites">
+        <h2 class="section-title">Actualités</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-image">🍯</div>
+                <div class="news-content">
+                    <h3>Nouveau : Miel Artisanal</h3>
+                    <p>Découvrez notre nouvelle trouvaille : du miel artisanal naturel et ultra frais.</p>
+                    <a href="#" class="read-more">En savoir plus →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">🥓</div>
+                <div class="news-content">
+                    <h3>Charcuterie de Bigorre</h3>
+                    <p>Redécouvrez le porc noir de Bigorre fumé, un produit d'excellence rare.</p>
+                    <a href="#" class="read-more">En savoir plus →</a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">🌿</div>
+                <div class="news-content">
+                    <h3>Fraîcheur Garantie</h3>
+                    <p>Fruits et légumes ultra-frais sélectionnés chaque matin.</p>
+                    <a href="#" class="read-more">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="apropos">
+        <div class="about-content">
+            <h2>Goût et Fraîcheur depuis 2012</h2>
+            <p>Nous travaillons chaque jour avec des producteurs locaux pour offrir la meilleure qualité.</p>
+            <p>Notre passion : proposer des produits sains, savoureux et proches de chez vous.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contactez-nous</h2>
+            <p>Besoin d'informations ? Nous sommes là pour vous répondre.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">📍</div>
+                    <strong>Adresse</strong>
+                    <span>Pechbonnieu, Occitanie</span>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">📞</div>
+                    <strong>Téléphone</strong>
+                    <span>À venir</span>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon">✉️</div>
+                    <strong>Email</strong>
+                    <span>contact@goutetfraicheur.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Goût et Fraîcheur - Tous droits réservés | Fait avec ❤️ pour les produits locaux</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
