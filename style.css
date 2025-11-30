@@ -182,13 +182,15 @@ nav {
 .hero {
     margin-top: 110px;
     min-height: 80vh;
+    padding: 0 40px;              
+    box-sizing: border-box;       
     background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
         url("arriereplan gout et fraicheur.jpg") center/cover no-repeat;
+    background-clip: content-box; 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 1.5rem; /* padding gauche/droite sur le hero */
     text-align: center;
     color: #fff;
 }
@@ -197,6 +199,7 @@ nav {
     max-width: 700px;
     animation: fadeInUp 1s ease;
 }
+
 
 .hero h1 {
     font-size: 3.4rem;
