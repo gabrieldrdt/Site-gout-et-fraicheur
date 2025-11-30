@@ -14,7 +14,7 @@
         <nav>
 
             <div class="logo">
-                <img src="Goût et Fraîcheur 6.png" alt="Logo" class="logo-img">
+                <img src="Goût et Fraîcheur 6.png" alt="Logo Goût et Fraîcheur" class="logo-img">
                 <span class="logo-text">Goût et Fraîcheur</span>
             </div>
 
@@ -43,40 +43,87 @@
     <!-- HERO -->
     <section class="hero" id="accueil">
         <div class="hero-content">
-            <h1>Le Vrai Goût à Votre Portée</h1>
-            <p>Produits locaux & fraîcheur garantie depuis 2012</p>
+            <h1>Le vrai goût à votre portée</h1>
+            <p>Depuis 2012, nous mettons en avant des produits locaux, frais et choisis avec soin auprès de producteurs de confiance.</p>
             <a href="#produits" class="cta-button">Découvrir nos produits</a>
+        </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section class="section about" id="apropos">
+        <div class="container about-content">
+            <h2>Goût et Fraîcheur depuis 2012</h2>
+            <p>
+                Après plus de vingt ans dans le commerce de détail, Goût et Fraîcheur est né avec une envie simple : 
+                proposer des produits qui ont vraiment du goût, tout en respectant la saisonnalité et le travail des producteurs.
+            </p>
+            <p>
+                Chaque jour, nous privilégions les circuits courts et les partenariats locaux pour garantir fraîcheur, qualité 
+                et transparence. Notre objectif : vous faire redécouvrir le plaisir d’une assiette de produits authentiques.
+            </p>
+            <p>
+                Au fil du temps, nous avons aussi développé des plateaux variés pour vos repas, apéritifs et événements, 
+                afin de partager ce savoir-faire convivialement, en famille, entre amis ou au travail.
+            </p>
         </div>
     </section>
 
     <!-- PRODUITS -->
     <section class="section" id="produits">
         <div class="container">
-            <h2 class="section-title">Nos Produits</h2>
+            <h2 class="section-title">Nos univers</h2>
 
             <div class="grid-cards">
 
                 <div class="card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="primeur.jpg" alt="Rayon primeur">
+                    </div>
                     <div class="card-content">
-                        <h3>Fruits & Légumes</h3>
-                        <p>Fraîcheur quotidienne, sélection locale.</p>
+                        <h3>Primeur</h3>
+                        <p>
+                            Fruits et légumes de saison, choisis chaque jour auprès de producteurs locaux, 
+                            pour des saveurs naturelles et une fraîcheur maximale.
+                        </p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="fromager.jpg" alt="Sélection de fromages">
+                    </div>
                     <div class="card-content">
-                        <h3>Miel Artisanal</h3>
-                        <p>Miel local 100% naturel et non chauffé.</p>
+                        <h3>Fromager</h3>
+                        <p>
+                            Une sélection de fromages affinés avec soin, issus de notre région et d’ailleurs, 
+                            pour accompagner vos repas et plateaux gourmands.
+                        </p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="caviste.jpg" alt="Espace caviste">
+                    </div>
                     <div class="card-content">
-                        <h3>Saumon Fumé</h3>
-                        <p>Produit haut de gamme, fumé artisanalement.</p>
+                        <h3>Caviste</h3>
+                        <p>
+                            Vins, bières et autres boissons sélectionnées pour sublimer vos apéritifs et 
+                            repas, avec des références locales et de caractère.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="plateaux.jpg" alt="Plateaux traiteur">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nos plateaux</h3>
+                        <p>
+                            Plateaux apéritifs, fromages ou mixtes pour vos événements privés ou professionnels, 
+                            préparés sur mesure selon vos envies.
+                        </p>
                     </div>
                 </div>
 
@@ -92,42 +139,60 @@
             <div class="grid-cards">
 
                 <div class="card news-card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="miel.jpg" alt="Pots de miel artisanal">
+                    </div>
                     <div class="card-content">
-                        <h3>Nouveau : Miel Artisanal</h3>
-                        <p>Récolté localement, fraîcheur garantie.</p>
+                        <h3>Miel artisanal</h3>
+                        <p>
+                            Une nouveauté sucrée avec un miel local et authentique, issu de ruches sélectionnées.
+                        </p>
                         <button class="news-btn"
-                        onclick="openNewsPopup('miel.jpg',
-                        'Nouveau : Miel Artisanal',
-                        'Découvrez notre nouveau miel artisanal récolté localement, 100% naturel, non chauffé et sans conservateurs. Une douceur authentique pour les amateurs de produits du terroir.')">
+                            onclick="openNewsPopup(
+                                'miel.jpg',
+                                'Miel artisanal',
+                                'Nous vous proposons désormais un miel artisanal issu de producteurs locaux. Il est récolté avec soin, sans additif et sans transformation superflue, pour conserver toutes ses qualités naturelles et son goût généreux. Une véritable douceur pour accompagner vos desserts, vos tartines ou vos préparations maison.'
+                            )">
                             En savoir plus →
                         </button>
                     </div>
                 </div>
 
                 <div class="card news-card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="bigorre.jpg" alt="Charcuterie de porc noir de Bigorre">
+                    </div>
                     <div class="card-content">
                         <h3>Charcuterie de Bigorre</h3>
-                        <p>Un produit d'exception arrive !</p>
+                        <p>
+                            Une charcuterie de porc noir de Bigorre fumée, pour des saveurs intenses et uniques.
+                        </p>
                         <button class="news-btn"
-                        onclick="openNewsPopup('bigorre.jpg',
-                        'Charcuterie de Bigorre',
-                        'Le porc noir de Bigorre fumé arrive en magasin ! Une charcuterie d’excellence à la saveur riche et authentique, produite selon un savoir-faire traditionnel.')">
+                            onclick="openNewsPopup(
+                                'bigorre.jpg',
+                                'Charcuterie de porc noir de Bigorre',
+                                'Après le succès de notre saumon fumé, nous mettons à l’honneur une nouvelle spécialité : la charcuterie de porc noir de Bigorre fumée. Ce produit d’exception se distingue par une viande délicate, un gras parfumé et un fumage maîtrisé qui apporte une profondeur aromatique remarquable. Parfait pour des apéritifs de caractère ou des planches gourmandes.'
+                            )">
                             En savoir plus →
                         </button>
                     </div>
                 </div>
 
                 <div class="card news-card">
-                    <div class="card-img-placeholder">Photo</div>
+                    <div class="card-img">
+                        <img src="legumes.jpg" alt="Fruits et légumes frais en magasin">
+                    </div>
                     <div class="card-content">
-                        <h3>Fraîcheur Garantie</h3>
-                        <p>Arrivage quotidien de légumes locaux.</p>
+                        <h3>Fruits & légumes ultra-frais</h3>
+                        <p>
+                            Un arrivage régulier de produits frais pour des recettes pleines de saveurs.
+                        </p>
                         <button class="news-btn"
-                        onclick="openNewsPopup('legumes.jpg',
-                        'Fraîcheur Garantie',
-                        'Chaque matin, nous sélectionnons des fruits & légumes ultra-frais auprès de producteurs locaux partenaires. Leur qualité et leur maturité sont rigoureusement contrôlées.')">
+                            onclick="openNewsPopup(
+                                'legumes.jpg',
+                                'Fruits et légumes ultra-frais',
+                                'Chaque jour, nous sélectionnons des fruits et légumes frais auprès de producteurs de la région. Cette démarche nous permet de vous proposer des produits croquants, savoureux et adaptés à la saison. Que ce soit pour vos plats du quotidien ou des recettes plus créatives, vous trouverez de quoi cuisiner simple et bon.'
+                            )">
                             En savoir plus →
                         </button>
                     </div>
@@ -137,18 +202,16 @@
         </div>
     </section>
 
-
     <!-- POPUP / MODAL -->
     <div class="modal" id="newsModal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeNewsPopup()">&times;</span>
 
-            <img id="modalImage" src="" class="modal-img">
+            <img id="modalImage" src="" class="modal-img" alt="">
             <h2 id="modalTitle"></h2>
             <p id="modalText"></p>
         </div>
     </div>
-
 
     <!-- FOOTER -->
     <footer class="footer" id="contact">
@@ -166,15 +229,15 @@
 
             <div class="footer-col">
                 <h2>Informations</h2>
-                <p><strong>Adresse :</strong> Montberon, Occitanie</p>
-                <p><strong>Téléphone :</strong> À venir</p>
+                <p><strong>Adresse :</strong> 1 place Aimé Lacanal, 31140 Montberon</p>
+                <p><strong>Téléphone :</strong> 05 61 35 84 74</p>
                 <p><strong>Email :</strong>
-                    <a href="mailto:contact@goutetfraicheur.com">contact@goutetfraicheur.com</a></p>
+                    <a href="mailto:gout.fraicheur@orange.fr">gout.fraicheur@orange.fr</a></p>
 
                 <div class="social-links">
 
                     <!-- Facebook -->
-                    <a href="#" target="_blank" class="social-icon">
+                    <a href="https://www.facebook.com/GOUTETFRAICHEUR" target="_blank" class="social-icon">
                         <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
                             <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 
                             .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/>

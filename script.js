@@ -22,14 +22,17 @@ function closeNewsPopup() {
 const themeToggle = document.getElementById("themeToggle");
 const body = document.body;
 
-themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    themeToggle.classList.toggle("active");
-    localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
-});
+if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        themeToggle.classList.toggle("active");
+        localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
+    });
+}
 
-// Charger le thème
+// Charger le thème sauvegardé
 if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark");
-    themeToggle.classList.add("active");
+    const themeToggleEl = document.getElementById("themeToggle");
+    if (themeToggleEl) themeToggleEl.classList.add("active");
 }
