@@ -3,267 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goût et Fraîcheur - Producteurs Locaux</title>
+    <title>Goût et Fraîcheur - Actualités du Magasin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
+<header>
+    <nav class="nav-container">
 
+        <div class="left-group">
             <div class="logo">
-                <img src="Goût et Fraîcheur 6.png" alt="Logo Goût et Fraîcheur" class="logo-img">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
                 <span class="logo-text">Goût et Fraîcheur</span>
             </div>
+        </div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produits">Produits</a></li>
-                <li><a href="#actualites">Actualités</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#actualites">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-            <!-- DARK/LIGHT MODE -->
-            <div class="theme-toggle" id="themeToggle">
+        <div class="right-group">
+
+            <div id="themeToggle" class="theme-toggle">
                 <div class="toggle-track">
                     <div class="toggle-thumb"></div>
                 </div>
             </div>
 
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle" id="menuToggle">
                 <span></span><span></span><span></span>
             </div>
 
-        </nav>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <h1>Le vrai goût à votre portée</h1>
-            <p>Depuis 2012, nous mettons en avant des produits locaux, frais et choisis avec soin auprès de producteurs de confiance.</p>
-            <a href="#produits" class="cta-button">Découvrir nos produits</a>
         </div>
-    </section>
 
-    <!-- A PROPOS -->
-    <section class="section about" id="apropos">
-        <div class="container about-content">
-            <h2>Goût et Fraîcheur depuis 2012</h2>
-            <p>
-                Après plus de vingt ans dans le commerce de détail, Goût et Fraîcheur est né avec une envie simple : 
-                proposer des produits qui ont vraiment du goût, tout en respectant la saisonnalité et le travail des producteurs.
-            </p>
-            <p>
-                Chaque jour, nous privilégions les circuits courts et les partenariats locaux pour garantir fraîcheur, qualité 
-                et transparence. Notre objectif : vous faire redécouvrir le plaisir d’une assiette de produits authentiques.
-            </p>
-            <p>
-                Au fil du temps, nous avons aussi développé des plateaux variés pour vos repas, apéritifs et événements, 
-                afin de partager ce savoir-faire convivialement, en famille, entre amis ou au travail.
-            </p>
-        </div>
-    </section>
+    </nav>
+</header>
 
-    <!-- PRODUITS -->
-    <section class="section" id="produits">
-        <div class="container">
-            <h2 class="section-title">Nos univers</h2>
+<section class="hero" id="accueil">
+    <div class="hero-content">
+        <h1>Des produits locaux, frais et authentiques</h1>
+        <p>Découvrez nos arrivages, promotions et nouveautés du magasin.</p>
+        <button class="cta-button">Voir les actualités</button>
+    </div>
+</section>
 
-            <div class="grid-cards">
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="primeur.jpg" alt="Rayon primeur">
-                    </div>
-                    <div class="card-content">
-                        <h3>Primeur</h3>
-                        <p>
-                            Fruits et légumes de saison, choisis chaque jour auprès de producteurs locaux, 
-                            pour des saveurs naturelles et une fraîcheur maximale.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="fromager.jpg" alt="Sélection de fromages">
-                    </div>
-                    <div class="card-content">
-                        <h3>Fromager</h3>
-                        <p>
-                            Une sélection de fromages affinés avec soin, issus de notre région et d’ailleurs, 
-                            pour accompagner vos repas et plateaux gourmands.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="caviste.jpg" alt="Espace caviste">
-                    </div>
-                    <div class="card-content">
-                        <h3>Caviste</h3>
-                        <p>
-                            Vins, bières et autres boissons sélectionnées pour sublimer vos apéritifs et 
-                            repas, avec des références locales et de caractère.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <img src="plateaux.jpg" alt="Plateaux traiteur">
-                    </div>
-                    <div class="card-content">
-                        <h3>Nos plateaux</h3>
-                        <p>
-                            Plateaux apéritifs, fromages ou mixtes pour vos événements privés ou professionnels, 
-                            préparés sur mesure selon vos envies.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ACTUALITÉS -->
-    <section class="section" id="actualites">
-        <div class="container">
-            <h2 class="section-title">Actualités</h2>
-
-            <div class="grid-cards">
-
-                <div class="card news-card">
-                    <div class="card-img">
-                        <img src="miel.jpg" alt="Pots de miel artisanal">
-                    </div>
-                    <div class="card-content">
-                        <h3>Miel artisanal</h3>
-                        <p>
-                            Une nouveauté sucrée avec un miel local et authentique, issu de ruches sélectionnées.
-                        </p>
-                        <button class="news-btn"
-                            onclick="openNewsPopup(
-                                'miel.jpg',
-                                'Miel artisanal',
-                                'Nous vous proposons désormais un miel artisanal issu de producteurs locaux. Il est récolté avec soin, sans additif et sans transformation superflue, pour conserver toutes ses qualités naturelles et son goût généreux. Une véritable douceur pour accompagner vos desserts, vos tartines ou vos préparations maison.'
-                            )">
-                            En savoir plus →
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card news-card">
-                    <div class="card-img">
-                        <img src="bigorre.jpg" alt="Charcuterie de porc noir de Bigorre">
-                    </div>
-                    <div class="card-content">
-                        <h3>Charcuterie de Bigorre</h3>
-                        <p>
-                            Une charcuterie de porc noir de Bigorre fumée, pour des saveurs intenses et uniques.
-                        </p>
-                        <button class="news-btn"
-                            onclick="openNewsPopup(
-                                'bigorre.jpg',
-                                'Charcuterie de porc noir de Bigorre',
-                                'Après le succès de notre saumon fumé, nous mettons à l’honneur une nouvelle spécialité : la charcuterie de porc noir de Bigorre fumée. Ce produit d’exception se distingue par une viande délicate, un gras parfumé et un fumage maîtrisé qui apporte une profondeur aromatique remarquable. Parfait pour des apéritifs de caractère ou des planches gourmandes.'
-                            )">
-                            En savoir plus →
-                        </button>
-                    </div>
-                </div>
-
-                <div class="card news-card">
-                    <div class="card-img">
-                        <img src="legumes.jpg" alt="Fruits et légumes frais en magasin">
-                    </div>
-                    <div class="card-content">
-                        <h3>Fruits & légumes ultra-frais</h3>
-                        <p>
-                            Un arrivage régulier de produits frais pour des recettes pleines de saveurs.
-                        </p>
-                        <button class="news-btn"
-                            onclick="openNewsPopup(
-                                'legumes.jpg',
-                                'Fruits et légumes ultra-frais',
-                                'Chaque jour, nous sélectionnons des fruits et légumes frais auprès de producteurs de la région. Cette démarche nous permet de vous proposer des produits croquants, savoureux et adaptés à la saison. Que ce soit pour vos plats du quotidien ou des recettes plus créatives, vous trouverez de quoi cuisiner simple et bon.'
-                            )">
-                            En savoir plus →
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- POPUP / MODAL -->
-    <div class="modal" id="newsModal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeNewsPopup()">&times;</span>
-
-            <img id="modalImage" src="" class="modal-img" alt="">
-            <h2 id="modalTitle"></h2>
-            <p id="modalText"></p>
+<section id="apropos" class="section">
+    <h2 class="section-title">Qui sommes-nous ?</h2>
+    <div class="container">
+        <div class="about-content">
+            <h2>Une passion pour le local</h2>
+            <p>Goût et Fraîcheur met en avant des producteurs locaux engagés dans une démarche durable.</p>
+            <p>Notre mission : rapprocher les consommateurs des artisans et agriculteurs de leur région.</p>
         </div>
     </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer" id="contact">
-        <div class="container footer-grid">
+<section id="actualites" class="section">
+    <h2 class="section-title">Actualités du magasin</h2>
+    <div class="container">
+        <div class="grid-cards">
 
-            <div class="footer-col">
-                <h2>Contactez-nous</h2>
-                <form>
-                    <input type="text" placeholder="Nom" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="4" placeholder="Votre message"></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/noel1.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Arrivage Spécial Noël</h3>
+                    <p>Chocolats artisanaux, fruits secs et paniers gourmands sont disponibles en magasin.</p>
+                    <button class="news-btn" data-modal="actu1">Lire l’article</button>
+                </div>
             </div>
 
-            <div class="footer-col">
-                <h2>Informations</h2>
-                <p><strong>Adresse :</strong> 1 place Aimé Lacanal, 31140 Montberon</p>
-                <p><strong>Téléphone :</strong> 05 61 35 84 74</p>
-                <p><strong>Email :</strong>
-                    <a href="mailto:gout.fraicheur@orange.fr">gout.fraicheur@orange.fr</a></p>
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/noel2.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Offres Festives</h3>
+                    <p>Profitez de réductions exceptionnelles sur les produits de fêtes : saumon, foie gras, chocolats…</p>
+                    <button class="news-btn" data-modal="actu2">Lire l’article</button>
+                </div>
+            </div>
 
-                <div class="social-links">
-
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/GOUTETFRAICHEUR" target="_blank" class="social-icon">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-                            <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 
-                            .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/>
-                        </svg>
-                    </a>
-
-                    <!-- Instagram -->
-                    <a href="#" target="_blank" class="social-icon">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-                            <path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2
-                            c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3h10zm-5 
-                            3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-.9
-                            a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/>
-                        </svg>
-                    </a>
-
+            <div class="card">
+                <div class="card-img">
+                    <img src="images/noel3.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Marché de Noël Local</h3>
+                    <p>Venez rencontrer nos producteurs et découvrir leurs créations pour les fêtes.</p>
+                    <button class="news-btn" data-modal="actu3">Lire l’article</button>
                 </div>
             </div>
 
         </div>
+    </div>
+</section>
 
-        <p class="copyright">
-            © 2025 Goût et Fraîcheur — Tous droits réservés
-        </p>
-    </footer>
+<!-- POPUPS -->
+<div class="modal" id="actu1">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img src="images/noel1.jpg" class="modal-img">
+        <h2>Arrivage Spécial Noël</h2>
+        <p>Chocolats artisanaux, fruits secs, thés d’hiver et paniers gourmands sont disponibles en magasin !</p>
+    </div>
+</div>
 
-    <script src="script.js"></script>
+<div class="modal" id="actu2">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img src="images/noel2.jpg" class="modal-img">
+        <h2>Offres Festives</h2>
+        <p>-15% sur le saumon fumé, -10% sur le foie gras local et promotions sur les chocolats de Noël !</p>
+    </div>
+</div>
+
+<div class="modal" id="actu3">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img src="images/noel3.jpg" class="modal-img">
+        <h2>Marché de Noël Local</h2>
+        <p>Retrouvez nos artisans : miel, bougies artisanales, décorations et biscuits de Noël.</p>
+    </div>
+</div>
+
+<!-- AVIS GOOGLE (API) -->
+<section class="section" id="avis-google">
+    <h2 class="section-title">Avis Google</h2>
+    <div class="container">
+        <div id="google-reviews" class="reviews-wrapper"></div>
+
+        <a href="https://www.google.com/maps/place/Goût+et+Fraicheur/"
+           target="_blank" class="google-link">
+            Voir tous les avis sur Google
+        </a>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h2>Contactez-nous</h2>
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <textarea rows="4" placeholder="Votre message"></textarea>
+                <button>Envoyer</button>
+            </form>
+        </div>
+
+        <div class="footer-col">
+            <h2>Informations</h2>
+            <p>Goût & Fraîcheur</p>
+            <p>1 place Aimé Lacanal</p>
+            <p>31140 Montberon</p>
+            <p>Téléphone : 05 61 35 84 74</p>
+            <p>Email : goutetfraicheur@outlook.fr</p>
+        </div>
+
+        <div class="footer-col">
+            <h2>Suivez-nous</h2>
+            <div class="social-links">
+
+                <a href="#" class="social-icon" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+
+                <a href="#" class="social-icon" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2V9.5c0-2 1.2-3.1 3-3.1
+                        .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h2>Nous trouver</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.7170353718943!2d1.4781903410329684!3d43.71642924845873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea177b3454097%3A0xd82d90b7af00af10!2sGo%C3%BBt%20et%20Fraicheur!5e0!3m2!1sfr!2sfr!4v1765202227864!5m2!1sfr!2sfr"
+                width="100%" height="200" style="border:0; border-radius:12px;" loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © <span id="year"></span> Goût et Fraîcheur — Tous droits réservés.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
