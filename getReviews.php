@@ -3,7 +3,7 @@
 // --------------------------
 // CONFIGURATION
 // --------------------------
-$apiKey = "AIzaSyB4mBWfeAbURI9pqAzV4763Uh-KL2GmyAI";  // NE PAS PARTAGER
+$apiKey = getenv("API_KEY");
 $placeId = "ChIJl0BFs3ehrhIREK8Ar7eQLdg"; // Place ID mis à jour
 
 

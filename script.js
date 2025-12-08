@@ -41,40 +41,43 @@ document.querySelectorAll(".news-btn").forEach(btn => {
 
 document.querySelectorAll(".modal-close").forEach(closeBtn => {
     closeBtn.addEventListener("click", () => {
-        closeBtn.parentElement.parentElement.classList.remove("show");
+        closeBtn.closest(".modal").classList.remove("show");
     });
 });
 
 /* ---------------------- */
-/* AVIS GOOGLE – VERSION PRO */
+/* AVIS GOOGLE via BACKEND RENDER */
 /* ---------------------- */
 
 async function loadGoogleReviews() {
     try {
-        const response = await fetch("getReviews.php");
+        const response = await fetch("https://site-gout-et-fraicheur.onrender.com/getReviews.php");
         const data = await response.json();
 
-        const reviews = data.result?.reviews;
-        if (!reviews) {
+        if (!data.result || !data.result.reviews) {
             console.warn("Aucun avis Google trouvé.");
             return;
         }
 
+        const reviews = data.result.reviews;
         const container = document.getElementById("google-reviews");
         container.innerHTML = "";
 
         reviews.slice(0, 6).forEach(review => {
-            // étoiles stylées
-            const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
+            const stars = "⭐".repeat(review.rating);
 
             const card = `
                 <div class="review-card">
                     <div class="review-header">
-                        <img src="${review.profile_photo_url}" class="review-photo">
+                        <img src="${review.profile_photo_url}" class="review-photo" />
                         <div class="review-author">${review.author_name}</div>
                     </div>
+
                     <div class="review-rating">${stars}</div>
-                    <p class="review-text">"${review.text}"</p>
+
+                    <div class="review-text">
+                        "${review.text}"
+                    </div>
                 </div>
             `;
 
